@@ -19,6 +19,7 @@ RSpec.describe Calculator do
 
     context '#division' do
       it 'will raise error when dividing by 0' do
+        # must use brackets
         expect{ subject.division(3, 0)}.to raise_error(ZeroDivisionError)
         expect{ subject.division(3, 0)}.to raise_error("divided by 0")
         expect{ subject.division(3, 0)}.to raise_error(ZeroDivisionError, "divided by 0")
