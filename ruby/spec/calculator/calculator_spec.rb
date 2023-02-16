@@ -1,4 +1,4 @@
-require '../lib/calculator.rb'
+require 'calculator'
 
 RSpec.describe Calculator do
 
