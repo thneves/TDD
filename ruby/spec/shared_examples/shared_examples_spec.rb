@@ -11,9 +11,10 @@ end
 describe 'Person' do
   subject(:person) { Person.new }
 
+  include_examples 'status', :happy #doesnt show naming
   it_behaves_like 'status', :happy
   it_behaves_like 'status', :sad
-  it_behaves_like 'status', :excited
+  it_should_behave_like 'status', :excited
 end
 
 # it 'happy!' do
