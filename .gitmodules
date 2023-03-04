@@ -1,0 +1,3 @@
+[submodule "tdd_rails"]
+	path = tdd_rails
+	url = git@github.com:thneves/TDD.git
